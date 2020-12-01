@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Imagine Dragons Music ♫</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jsProject.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+</head>
+
+<body>
+
+    <header id="#head">
+        <div class="container-fluid" style="background-color: #292a33">
+            <img src="img/group4.jpg" class="d-block w-100" alt="..." style="max-height:30em; max-width:100%">
+        </div>
+
+        <div class="container">
+            <div class="container-fluid bg-dark fixed-top text-center">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-dark bg-dark container">
+                    <a class="navbar-brand" href="#"></a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">
+                        <img src="img/Logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                        Imagine Dragons Music ♫
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbar-1">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link active" href="index.html" target="_self">Inicio</a>
+                            <div class="dropdown">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Contenido
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <a class="dropdown-item" href="Galeria.html">Galeria</a>
+                                    <a class="dropdown-item" href="Noticias.html">Noticias</a>
+                                    <a class="dropdown-item" href="Agenda.html">Agenda</a>
+                                    <a class="dropdown-item" href="Playlist.html">Playlist</a>
+                                </div>
+                            </div>
+                            <a class="nav-item nav-link" href="SobreNosotros.html" target="_self">Acerca del sitio y del autor</a>
+                            <a class="nav-item nav-link" href="Contactenos.html" target="_self">Contactanos</a>
+
+                            <div><a href="Registro.html" target="_self" class="btn btn-info">Registrate</a></div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <br />
+    <div class="container">
+        <section class=" main row">
+
+
+            <article id="art" class="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
+                <form class="formulario" action="#" id="formulario" method="post">
+
+
+                    <h2>Deja tu mensaje</h2>
+                    <span class="required_notification">* Datos requeridos.</span>
+                    <hr />
+                    <br />
+                    <label id="name">*Nombre:</label>
+                    <input type="text" placeholder="Nombre Apellido" required=required />
+                    <hr />
+                    <br />
+                    <label id="email">*Email:</label>
+                    <input type="email" name="email" placeholder="info@email.com" required=required />
+                    <hr />
+                    <br />
+                    <label id="message">*Mensaje:</label>
+                    <textarea id="text" cols="40" rows="6"></textarea>
+                    <hr />
+                    <br />
+                    <button class="submit btn btn-info" type="submit" onclick="textarea()">Enviar mensaje</button>
+                </form>
+            </article>
+
+            <br />
+            <aside id="sidebar" class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                <br>
+                <h2>Imagine Dragons Music♫</h2>
+                <img id="imgj" src="img/Logo.png" style="max-width:100%; max-height:35em"/>
+            </aside>
+
+
+
+        </section>
+
+    </div>
+    <br />
+
+    <footer id="foot" class="navbar-fixed-bottom text-center bg-dark">
+        <img id="musicaAlbum" src="img/albumImage.jpg" style="float: left; height: 55px;" >
+        <audio id="audio"   src="media/Imagine Dragons - PlayList.mp3"  controls style="height: 40px; width: 280px; float: right;  margin-top: 6px; margin-right: 5px;">
+        </audio> 
+        Imagine Dragons Music Site
+        <br> Derechos de Autor: Juan Jose Amores Villalobos. 
+    </footer>
+
+
+    <script>
+        //Jquery para reproducir y pausar el audio en registro
+        $("#musicaAlbum").click(function () {
+            $("#audio")[0].play();
+        });
+        $("#musicaAlbum").dblclick(function () {
+            $("#audio")[0].pause();
+        });
+    </script>
+    <script src="js/jsProject.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+</body>
+</html>

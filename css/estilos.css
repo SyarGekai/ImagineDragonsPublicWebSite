@@ -1,0 +1,59 @@
+﻿
+
+h1  {
+    color: darkcyan;
+    font-family: fantasy;
+    text-align:center;
+}
+h2 {
+    color: darkcyan;
+    font-family: fantasy;
+    text-align: justify;
+}
+
+h3 {
+    color: darkcyan;
+    font-family: fantasy;
+    text-align: justify;
+}
+
+a {
+    font-family: fantasy;
+    text-align: justify;
+    color: darkcyan;
+}
+
+p {
+    font-family: fantasy;
+    text-align: justify;
+}
+
+label {
+    font-family: fantasy;
+    text-align: justify;
+}
+#sidebar {
+    font-family: fantasy;
+    text-align: center;
+}
+#foot {
+    color: white;
+    font-family: fantasy;
+    height:55px;
+    text-align:center;
+}
+
+
+.iframe-container{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+    height:0;
+}
+.iframe-container iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
